@@ -1,0 +1,40 @@
+class CarBrand {
+    String nation;
+    int rank;
+
+    CarBrand(String string, int num){
+        nation = string;
+        rank = num;
+    }
+
+    void sayNation() {
+        System.out.println("This brand is from " + nation);
+    }
+
+    void sayRank(){
+        System.out.println("This brand's rank in 2020 is " + rank);
+    }
+}
+
+
+
+
+
+public class Sample {
+    public static void main(String[] args) {
+        CarBrand Toyota = new CarBrand("Japan", 1);
+        CarBrand Benz = new CarBrand("Germany", 2);
+        CarBrand Tesla = new CarBrand("USA", 6);
+        CarBrand Kia = new CarBrand("South Korea", 13);
+
+        Toyota.sayNation();
+        Benz.sayNation();
+        Tesla.sayNation();
+        Kia.sayNation();
+
+        Toyota.sayRank();
+        Benz.sayRank();
+        Tesla.sayRank();
+        Kia.sayRank();
+    }
+}
